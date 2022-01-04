@@ -20,6 +20,9 @@ const theme = extendTheme({
 		initialColorMode: "dark",
 		useSystemColorMode: false,
 	},
+	sizes: {
+		container: "1200px",
+	},
 });
 
 export default theme;

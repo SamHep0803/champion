@@ -3,7 +3,7 @@ import { supabase } from "../lib/supabase";
 
 const login = () => {
 	async function signInWithTwitter() {
-		await supabase.auth.signIn({
+		const { user } = await supabase.auth.signIn({
 			provider: "twitter",
 		});
 	}
